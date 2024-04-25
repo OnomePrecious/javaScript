@@ -1,11 +1,10 @@
-const arrayInput = [5, 2, 3, 1, 2];
-function addIndex(numbers){
-    for(i = 0; i <numbers.length; i++){
-
-numbers.pop();
-numbers.push() + 1;
-//let a = [5, 2, 3, 1, 2];
-    } 
+function addOneToLastIndex(numbers) {
+    if (numbers.length === 0) {
+        return [1];
+    } else {
+        const result = numbers.slice();
+        result[result.length - 1]++;
+        return result;
+    }
 }
-module.exports = addIndex;
-
+module.exports = addOneToLastIndex;

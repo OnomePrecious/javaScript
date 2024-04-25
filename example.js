@@ -1,7 +1,8 @@
 const num = 2;
 
 function exampleFunction() {
-    let lastName = "Ugbo"; // function scope,it cannot be accessed outside the functionu 
+    let lastName = "Ugbo"; // function scope,it cannot be accessed outside the function'
+    
     if(true){
         let firstName = "Chinedu"; // block scope, it cannot be accessed outside the block
         console.log("I print from if block", num);
